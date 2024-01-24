@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Autos, Toyota, Nuevos, Modelos, 0km, Moderno">
     <title>Toyota_Modelos</title>
     <link rel="shortcut icon" href="../media/logo-toyota.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
@@ -53,7 +55,7 @@
 
     <main>
         <section>
-            <div class="modelos-gral">
+            <div class="modelos-gral" data-aos="fade-up">
                 <div>
                     <h1>Modelos</h1>
                 </div>
@@ -61,7 +63,7 @@
                     <h2>Autos</h2>
                 </div>
             </div>
-            <div class="autos" id="autos">
+            <div class="autos" data-aos="fade-up" id="autos">
                 <div>
                     <h3>Etios Hatchback</h3>
                     <img src="../media/Etios.png" alt="Foto de Toyota Etios Rojo" name="etios">
@@ -79,7 +81,7 @@
                     <img src="../media/Etios-Sedan.png" alt="Foto de Toyota Etios Sedán gris oscuro" name="etios-sedan">
                 </div>
             </div>
-            <div id="SUV">
+            <div id="SUV" data-aos="fade-up">
                 <div class="modelos-gral">
                     <h2>SUV</h2>
                 </div>
@@ -98,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div id="pick-up">
+            <div id="pick-up" data-aos="fade-up">
                 <div class="modelos-gral">
                     <h2>Pick-Ups</h2>
                 </div>
@@ -113,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Hibridos">
+            <div id="Hibridos" data-aos="fade-up">
                 <div class="modelos-gral">
                     <h2>Híbridos</h2>
                 </div>
@@ -136,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div id="Deportivos">
+            <div id="Deportivos" data-aos="fade-up">
                 <div class="modelos-gral">
                     <h2>Deportivos</h2>
                 </div>
@@ -171,7 +173,10 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
