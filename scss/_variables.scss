@@ -7,8 +7,7 @@ $estilos: (
     margen-abajo: 15rem,
 );
 
-@mixin arreglo($display, $direccion, $justify, $wrap, $alineacion)
-{
+@mixin arreglo($display, $direccion, $justify, $wrap, $alineacion) {
     display: $display;
     flex-direction: $direccion;
     justify-content: $justify;

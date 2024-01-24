@@ -18,7 +18,6 @@
     width: 5rem;
 }
 
-
 #mapa {
     @include arreglo(flex, column, center, wrap, start);
     gap: 2rem 2rem;
