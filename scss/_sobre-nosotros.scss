@@ -1,0 +1,64 @@
+.grilla-nosotros {
+    display: grid;
+    grid-template-areas:
+        "arriba arriba arriba arriba"
+        "aside main main main"
+        "footer footer footer footer";
+
+    .sobre-nosotros {
+        background-image: url(../media/banner-planta-toyota.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 17rem;
+        margin-top: 7rem;
+        grid-area: arriba;
+        grid-column: 1/5;
+        grid-row: auto;
+
+        h1 {
+            color: white;
+            text-align: left;
+            font-size: 300%;
+            display: block;
+            padding-top: 10rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .nosotros-parrafos {
+        text-align: left;
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+        padding-right: 4rem;
+        @include arreglo(flex, column, center, wrap, start);
+        gap: 4rem;
+        grid-area: main;
+        grid-column: 2/5;
+    }
+
+    .barra-vertical {
+        grid-area: aside;
+        width: 2px;
+        height: 25rem;
+        background-color: red;
+        margin: 10rem;
+        grid-column: 1/2;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    .grilla-nosotros {
+        .nosotros-parrafos {
+            gap: 2rem;
+            margin-right: 3rem;
+        }
+
+        .barra-vertical {
+            height: 32rem;
+            margin-top: 16rem;
+            margin-left: 6rem;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.service-titulo {
+    text-align: left;
+    margin-top: 13rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+.service {
+    margin-top: 6rem;
+    @include arreglo(flex, row, space-evenly, wrap, center);
+    margin-bottom: 7rem;
+
+    h2 {
+        font-family: $tipografia;
+        font-weight: 650;
+        font-size: 140%;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 30rem;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    .service-titulo {
+        margin-top: 10rem;
+    }
+
+    .service {
+        @include arreglo(flex, column, center, wrap, center);
+        gap: 7rem;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+}

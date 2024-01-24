@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $tipografia;
+    font-weight: 400;
+    font-size: 17px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        font-family: $tipografia;
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-family: $tipografia;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-family: $tipografia;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    main {
+        text-align: center;
+    }
+}

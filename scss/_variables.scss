@@ -1,0 +1,17 @@
+$tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+$estilos: (
+    color: red,
+    border: 4px solid,
+    margen-arriba: 15rem,
+    margen-abajo: 15rem,
+);
+
+@mixin arreglo($display, $direccion, $justify, $wrap, $alineacion)
+{
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-items: $alineacion;
+}

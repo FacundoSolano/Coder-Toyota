@@ -1,0 +1,119 @@
+.carrusel {
+    margin-top: 7rem;
+}
+
+.autos-importantes {
+    font-family: $tipografia;
+    font-weight: 650;
+    font-size: 150%;
+    @include arreglo(flex, row, space-evenly, wrap, center);
+    margin-top: 20rem;
+
+    #sw4-imagen {
+        margin-bottom: 1.7rem;
+    }
+}
+
+.divisor {
+    border: map-get($estilos, border);
+    margin-top: map-get($estilos, margen-arriba);
+    color: map-get($estilos, color);
+}
+
+.consegui-tu-toyota {
+    margin-top: 12rem;
+}
+
+.categorias-toyota {
+    @include arreglo(flex, row, space-evenly, wrap, center);
+    margin-top: 7rem;
+    margin-bottom: 15rem;
+
+    img {
+        height: 11rem;
+        width: auto;
+        margin-top: 3rem;
+    }
+
+    h3 {
+        margin-inline: 8rem;
+    }
+}
+
+
+.divisor-fino {
+    @extend .divisor;
+    margin-top: 10rem;
+}
+
+.index-abajo {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    @include arreglo(flex, row, space-evenly, wrap, center);
+
+    img {
+        height: 12rem;
+        width: 18rem;
+        margin-inline: 3rem;
+    }
+
+    h3 {
+        margin-inline: 9rem;
+        text-decoration: underline
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .carrusel {
+        margin-top: 7rem;
+    }
+
+    .importantes-carrusel {
+        display: none;
+    }
+
+
+    .divisor {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .divisor-fino {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    .carrusel {
+        margin-top: 7rem;
+    }
+
+    .autos-importantes {
+        display: none;
+    }
+
+    .importantes-carrusel {
+        margin-top: 7rem;
+    }
+
+    .divisor {
+        width: 60%;
+        margin: 20%;
+    }
+
+    .divisor-fino {
+        width: 70%;
+        margin: 16%;
+    }
+
+    .categorias-toyota img {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-abajo {
+        @include arreglo(flex, column, center, nowrap, center);
+        gap: 4rem;
+    }
+}
