@@ -1,0 +1,137 @@
+@media screen and (min-width: 700px) {
+    .carrusel {
+        margin-top: 7rem;
+    }
+
+    .importantes-carrusel {
+        display: none;
+    }
+
+
+    .divisor {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .divisor-fino {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    main {
+        text-align: center;
+    }
+
+    .carrusel {
+        margin-top: 7rem;
+    }
+
+    .autos-importantes {
+        display: none;
+    }
+
+    .importantes-carrusel {
+        margin-top: 7rem;
+    }
+
+    .divisor {
+        width: 60%;
+        margin: 20%;
+    }
+
+    .divisor-fino {
+        width: 70%;
+        margin: 16%;
+    }
+
+    .categorias-toyota img {
+        width: 100%;
+        height: auto;
+    }
+
+    .index-abajo {
+        @include arreglo(flex, column, center, nowrap, center);
+        gap: 4rem;
+    }
+
+    .grilla-nosotros {
+        .nosotros-parrafos {
+            gap: 2rem;
+            margin-right: 3rem;
+        }
+
+        .barra-vertical {
+            height: 32rem;
+            margin-top: 16rem;
+            margin-left: 6rem;
+        }
+    }
+
+    .service-titulo {
+        margin-top: 10rem;
+    }
+
+    .service {
+        @include arreglo(flex, column, center, wrap, center);
+        gap: 7rem;
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .modelos-gral {
+        h1 {
+            margin-top: 10rem;
+        }
+
+        margin-top: 5rem;
+    }
+
+    .autos {
+        margin-top: 5rem;
+        @include arreglo(flex, row, start, wrap, center);
+
+        img {
+            width: 20rem;
+            height: auto;
+        }
+
+        h3 {
+            font-family: $tipografia;
+            font-weight: 650;
+            font-size: 100%;
+        }
+    }
+
+    .contacto {
+        @include arreglo(flex, column, center, nowrap, center);
+
+        h1 {
+            margin-right: 5rem;
+        }
+
+        .formulario-contacto {
+            margin-left: 5rem;
+        }
+    }
+
+    #mapa {
+        margin-right: 5rem;
+    }
+
+    footer {
+        font-size: 80%;
+
+        #logo-footer {
+            width: 8%;
+        }
+
+        .youtube-footer {
+            height: 1.7rem;
+        }
+    }
+}

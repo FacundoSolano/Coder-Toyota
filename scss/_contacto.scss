@@ -24,21 +24,3 @@
     margin-top: 5rem;
     margin-bottom: 7rem;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 700px) {
-    .contacto {
-        @include arreglo(flex, column, center, nowrap, center);
-
-        h1 {
-            margin-right: 5rem;
-        }
-
-        .formulario-contacto {
-            margin-left: 5rem;
-        }
-    }
-
-    #mapa {
-        margin-right: 5rem;
-    }
-}

@@ -22,19 +22,3 @@
         height: auto;
     }
 }
-
-@media only screen and (min-width: 320px) and (max-width: 700px) {
-    .service-titulo {
-        margin-top: 10rem;
-    }
-
-    .service {
-        @include arreglo(flex, column, center, wrap, center);
-        gap: 7rem;
-
-        img {
-            width: 50%;
-            height: auto;
-        }
-    }
-}
