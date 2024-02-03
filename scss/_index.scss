@@ -2,12 +2,21 @@
     margin-top: 7rem;
 }
 
-.autos-importantes {
+.titulo-index {
     font-family: $tipografia;
     font-weight: 650;
-    font-size: 150%;
+    font-size: 200%;
+    margin-top: 12rem;
+    margin-bottom: 7rem;
+}
+
+.autos-importantes {
+    h2 {
+        font-family: $tipografia;
+        font-weight: 650;
+        font-size: 150%;
+    }
     @include arreglo(flex, row, space-evenly, wrap, center);
-    margin-top: 20rem;
 
     #sw4-imagen {
         margin-bottom: 1.7rem;
@@ -30,7 +39,7 @@
     margin-bottom: 15rem;
 
     img {
-        height: 11rem;
+        height: 10rem;
         width: auto;
         margin-top: 3rem;
     }

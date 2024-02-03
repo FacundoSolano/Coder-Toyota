@@ -1,26 +1,30 @@
 .contacto {
-    text-align: left;
+    text-align: center;
     margin-top: 10rem;
-    margin-left: 5rem;
+    margin: 15rem;
 
     .formulario-contacto {
-        @include arreglo(flex, column, center, wrap, start);
+        @include arreglo(flex, column, center, wrap, center);
         gap: 2rem;
         margin-top: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border: solid red;
 
         label {
             display: block;
         }
     }
-}
 
-.enviar-borrar {
-    width: 5rem;
-}
+    .enviar-borrar {
+        width: 5rem;
+    }
 
-#mapa {
-    @include arreglo(flex, column, center, wrap, start);
-    gap: 2rem 2rem;
-    margin-top: 5rem;
-    margin-bottom: 7rem;
+    #mapa {
+        margin-top: 7rem;
+
+        h2 {
+            margin-bottom: 5rem;
+        }
+    }
 }

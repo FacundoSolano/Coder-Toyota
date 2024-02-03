@@ -30,9 +30,9 @@
         text-align: left;
         margin-top: 10rem;
         margin-bottom: 8rem;
-        padding-right: 4rem;
+        padding-right: 15rem;
         @include arreglo(flex, column, center, wrap, start);
-        gap: 4rem;
+        gap: 2rem;
         grid-area: main;
         grid-column: 2/5;
     }
@@ -40,7 +40,7 @@
     .barra-vertical {
         grid-area: aside;
         width: 2px;
-        height: 25rem;
+        height: 83rem;
         background-color: red;
         margin: 10rem;
         grid-column: 1/2;

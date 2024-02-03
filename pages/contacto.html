@@ -57,21 +57,29 @@
     <main>
         <section class="contacto">
             <h1>Contactanos</h1>
-            <form class="formulario-contacto">
+            <form class="formulario-contacto rounded">
                 <div>
                     <h2>Datos personales</h2>
-                    <label for="nombre">Nombre*</label>
-                    <input id="nombre" type="text" required>
-                    <label for="email">E-Mail*</label>
-                    <input id="email" type="email" required>
-                    <label for="telefono">Teléfono*</label>
-                    <input id="telefono" type="tel" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nombre">Nombre*</label>
+                            <input id="nombre" type="text" required>
+                        </div>
+                        <div class="col">
+                            <label for="email">E-Mail*</label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <div class="col">
+                            <label for="telefono">Teléfono*</label>
+                            <input id="telefono" type="tel" required>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h2>Modelo de interés</h2>
                     <select numbered name="modelos-interes" id="modelos-interes">
                         <option selected="true" disabled="disabled">Modelos</option>
-                        <optgroup label="autos">
+                        <optgroup label="Autos">
                             <option>Etios</option>
                             <option>Etios Sedán</option>
                             <option>Yaris Hatchback</option>
@@ -96,12 +104,20 @@
                 </div>
                 <div>
                     <h2>Ubicación</h2>
-                    <label for="provincia">Provincia</label>
-                    <input type="text" id="provincia">
-                    <label for="ciudad">Ciudad</label>
-                    <input type="text" id="ciudad">
-                    <label for="localidad">Localidad</label>
-                    <input type="text" id="localidad">
+                    <div class="row">
+                        <div class="col">
+                            <label for="provincia">Provincia</label>
+                            <input type="text" id="provincia">
+                        </div>
+                        <div class="col">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad">
+                        </div>
+                        <div class="col">
+                            <label for="localidad">Localidad</label>
+                            <input type="text" id="localidad">
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h2>Consultas</h2>
@@ -124,7 +140,8 @@
     </main>
 
     <footer>
-        <img src="../media/logo-toyota-footer.svg" alt="Logo de Toyota blanco" id="logo-footer">
+        <a href="../index.html"><img src="../media/logo-toyota-footer.svg" alt="Logo de Toyota blanco"
+                id="logo-footer"></a>
         <a href="#mapa">Concesionarios</a>
         <a href="https://www.lexus.com.ar/es.html" target="_blank">Lexus</a>
         <a href="https://www.instagram.com/toyotaargentina/" target="_blank"><iconify-icon icon="bi:instagram"

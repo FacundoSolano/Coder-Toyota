@@ -26,6 +26,9 @@
 
     .carrusel {
         margin-top: 7rem;
+        img {
+            height: 18rem;
+        }
     }
 
     .autos-importantes {
@@ -59,12 +62,12 @@
     .grilla-nosotros {
         .nosotros-parrafos {
             gap: 2rem;
-            margin-right: 3rem;
+            padding-right: 5rem;
         }
 
         .barra-vertical {
-            height: 32rem;
-            margin-top: 16rem;
+            height: 130rem;
+            margin-top: 10rem;
             margin-left: 6rem;
         }
     }
@@ -109,19 +112,25 @@
 
     .contacto {
         @include arreglo(flex, column, center, nowrap, center);
+        margin: 5rem;
+        margin-top: 7rem;
 
-        h1 {
-            margin-right: 5rem;
-        }
+        #mapa {
+            margin: 0;
+            margin-top: 7rem;
+            margin-left: 2rem;
 
-        .formulario-contacto {
-            margin-left: 5rem;
+            iframe {
+                width: 20rem;
+                height: 25rem;
+            }
+
+            h2 {
+                margin-right: 2rem;
+            }
         }
     }
 
-    #mapa {
-        margin-right: 5rem;
-    }
 
     footer {
         font-size: 80%;
