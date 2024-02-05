@@ -1,0 +1,36 @@
+.not-found {
+    @include arreglo(flex, row, start, wrap, center);
+    margin-top: 10rem;
+
+    div {
+        margin: 8rem;
+
+        h1 {
+            font-family: $tipografia;
+            font-weight: 650;
+            font-size: 600%;
+            text-align: start;
+        }
+
+        h2 {
+            font-family: $tipografia;
+            font-weight: 400;
+            font-size: 250%;
+            text-align: start;
+        }
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+        margin-left: 15rem;
+    }
+
+
+    ul {
+        text-align: start;
+        font-family: $tipografia;
+        font-size: 130%;
+        margin-bottom: 20rem;
+    }
+}
